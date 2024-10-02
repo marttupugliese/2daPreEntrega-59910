@@ -1,0 +1,33 @@
+// import variables
+@import "../utilidades/variables";
+
+// import mixin
+@import "../utilidades/mixin.scss";
+
+
+/* estilos */
+
+main .div-uno{
+    margin-bottom: 30px;
+    background-color: $color-principal;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    @include flex;
+    .div-uno{
+        @include border-radius;
+        background-color: $div-uno;
+    }
+    
+
+    
+}
